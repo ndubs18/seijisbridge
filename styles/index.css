@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar .nav-item a{
@@ -49,32 +50,55 @@ section.one .section_content {
 }
 
 .section_content {
-    width: 80%;
+    width: 75%;
     padding: 0 2rem;
     margin: 0 auto;
 }
-
-section.one .row {
-    height: auto;
+ .row.extra {
+    width: 100%;
 }
 
-section.one .col {
+section.one .card.extra {
+    box-shadow: none;
+    text-align: center; 
+
+}
+
+section.one .card.extra .card-title {
+    margin: 0 0 .5rem !important;
+ 
+}
+
+.card.extra .card-body {
+    width: fit-content;
+}
+
+.card.extra .btn {
+    width: 8rem;
+
 }
 
 .card {
     margin: 1rem 0;
+    border:none;
+    box-shadow: 0 .5px 1.5px .5px gray;
 }
 
 .card-body .btn {
 
-    background: rgba(149, 165, 166, 1) !important;
-    border-color: rgba(149, 165, 166, 1) !important;
+    background: rgba(1, 152, 117, 1) !important;
+    border-color: rgba(1, 152, 117, 1)!important;
 
 }
 
+.card-img-top {
+    height: 10rem;
+}
+
 section.two {
-    height: 80vh;
-    background: rgba(104, 195, 163, 1)
+    height: auto;
+    background: rgba(0,0,0,.13);
+    padding: 6rem 0;
 }
 
 section.two .section_content {
@@ -83,13 +107,21 @@ section.two .section_content {
 
 
 section.three {
-    height: 70vh;
+    height: auto;
+    margin: 4rem 0;
+}
+
+.carousel-item .w-100 {
+    width: auto;
+    height: 250px;
+    max-height: 250px;
 }
 
 section.four{
-    height: 80vh;
+    height: auto;
     width: 100%;
-    background: rgba(0,0,0,.13)
+    background: rgba(0,0,0,.13);
+    padding: 4.5rem 0;
 }
 
 section.four .section_content {
@@ -105,7 +137,67 @@ section.four .row .card {
     margin: 0 auto;
 }
 
+
+/* FOOTER */
+
 footer {
-    height: 4rem;
+    height: 17rem;
     width: 100%;
-}
+    color: black;
+  }
+  
+  footer .footer_content {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 3rem 1rem;
+  }
+  
+  footer .footer_content ul {
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  footer .footer_content .legal {
+    justify-content: flex-start;
+  }
+  
+  .legal li {
+   margin-bottom: 1.5rem;
+  }
+  
+  footer .footer_content ul h3 {
+    font-weight: bolder;
+  }
+  
+  .footer_brand img {
+    width: 130px;
+  }
+  
+  .footer_brand li:first-child{
+  }
+  
+  .copyright {
+    display: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: .55rem;
+    background: rgba(0,0,0,.2);
+  }
+  
+  .footer_brand {
+    position: relative;
+    bottom: 7px;
+  }
+  
+
+
