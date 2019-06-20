@@ -12,12 +12,11 @@ hr {
 
 video {
     width:100%;
-    max-width:500px;
     height:auto;
      
 }
 
-.navbar .nav-item a{
+.navbar .nav-item a {
     color: white !important;
     
 }
@@ -58,7 +57,8 @@ section.one {
 }
 
 section.one .section_content {
-    padding: 3.5rem 0 2rem;
+    width: 75%;
+    padding: 5rem .5rem 4rem;
 }
 
 .section_content {
@@ -66,6 +66,7 @@ section.one .section_content {
     padding: 0 .5rem;
     margin: 0 auto;
 }
+
  .row.extra {
     width: 100%;
 }
@@ -76,8 +77,6 @@ section.one .section_content {
 section.one .card.extra {
     box-shadow: none;
     text-align: center;
-    width: fit-content;
-
 
 }
 
@@ -87,8 +86,9 @@ section.one .card.extra .card-title {
 }
 
 .card.extra .card-body {
-    width: fit-content;
-    padding-bottom: .5rem
+    width: 100%;
+
+    
 }
 
 .card.extra .btn {
@@ -96,11 +96,12 @@ section.one .card.extra .card-title {
 
 }
 
-.card {
+section.one .card {
     margin: 1rem auto;
     border:none;
     box-shadow: 0 .5px 1.5px .5px gray;
-    min-width: 8rem;
+    min-width: 226.4px;
+    max-width: 22rem
 }
 
 .card-body .btn {
@@ -136,8 +137,8 @@ section.three .col-sm, .col-sm-6 {
 
 .carousel-item .w-100 {
     width: auto;
-    height: 250px;
-    max-height: 250px;
+    min-height: 200px;
+    max-height: 410px;
 }
 
 .btn-outline-success {
@@ -149,7 +150,7 @@ section.four{
     height: auto;
     width: 100%;
     background: rgba(0,0,0,.13);
-    padding: 4.5rem 0;
+    padding: 4rem 0 4.5rem;
 }
 
 section.four .section_content {
@@ -225,6 +226,12 @@ footer {
   .footer_brand {
     position: relative;
     bottom: 7px;
+  }
+
+  @media only screen and(max-width: 795px) {
+    .card-body {
+        margin: 0 auto;
+    }
   }
   
 
