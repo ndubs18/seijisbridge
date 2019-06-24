@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     padding: 0;
     margin: 0;
@@ -12,7 +15,8 @@ hr {
 
 video {
     width:100%;
-    height:auto;
+    min-height:280px;
+    max-height:320px;
      
 }
 
@@ -21,11 +25,24 @@ video {
     
 }
 
+.nav-item a:hover {
+    color: gainsboro!important;
+}
+
 .navbar {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
     width: fit-content;
+    z-index: 1000;
+}
+
+.navbar-collapse.show {
+    background: rgba(0,0,0,.5)!important;
+}
+
+.navbar-collapse li a {
+    margin-left: 1rem!important;
 }
 
 header {
@@ -49,7 +66,14 @@ header .col-sm {
 }
 
 header img {
-    width: 5rem;
+    width: 4rem;
+}
+
+.header_img img {
+    width: 20rem;
+    height: auto;
+    margin: 0 auto;
+    
 }
 
 section.one {
@@ -135,10 +159,14 @@ section.three .col-sm, .col-sm-6 {
  margin-top: 1rem
 }
 
+.carousel-inner img {
+    height: 281px;
+}
+
 .carousel-item .w-100 {
     width: auto;
     min-height: 200px;
-    max-height: 410px;
+    max-height: 380px;
 }
 
 .btn-outline-success {
@@ -149,7 +177,7 @@ section.three .col-sm, .col-sm-6 {
 section.four{
     height: auto;
     width: 100%;
-    background: rgba(0,0,0,.13);
+    background:rgba(0,0,0,.13);
     padding: 4rem 0 4.5rem;
 }
 
@@ -166,13 +194,35 @@ section.four .row .card {
     margin: 0 auto;
 }
 
+section.five {
+    height: auto;
+    width: 100%;
+    padding: 2rem 0!important;
+}
+
+section.five button {
+    background: rgba(1, 152, 117, 1) !important;
+    border-color: rgba(1, 152, 117, 1)!important;
+    
+    
+}
+
+section.five .section_content {
+    width: 60%
+}
+
+section.five h1 {
+    text-align: center
+}
+
 
 /* FOOTER */
 
 footer {
-    height: 17rem;
+    height: auto;
     width: 100%;
     color: black;
+    background: rgba(0,0,0,.13);
   }
   
   footer .footer_content {
@@ -183,7 +233,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem 1rem;
   }
   
   footer .footer_content ul {
