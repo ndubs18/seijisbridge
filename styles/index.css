@@ -68,7 +68,10 @@ header .col-sm {
 header img {
     width: 4rem;
 }
-
+.navbar-toggler{
+    background: rgba(1, 152, 117, 1) !important;
+    border-color: rgba(1, 152, 117, 1)!important;
+}
 .header_img img {
     width: 20rem;
     height: auto;
@@ -81,12 +84,12 @@ section.one {
 }
 
 section.one .section_content {
-    width: 75%;
+    width: 65%;
     padding: 5rem .5rem 4rem;
 }
 
 .section_content {
-    width: 80%;
+    width: 70%;
     padding: 0 .5rem;
     margin: 0 auto;
 }
