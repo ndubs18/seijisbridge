@@ -9,9 +9,8 @@ body {
 }
 
 iFrame {
-    width:100%;
-    min-height:280px;
-    max-height:320px;
+    min-width:100%;
+    height: 380px;
      
 }
 
@@ -28,8 +27,8 @@ iFrame {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
-    width: fit-content;
     z-index: 1000;
+    margin: 0 auto;
 }
 
 .navbar li {
@@ -56,7 +55,7 @@ header {
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 header .row {
     height: 100%;
@@ -84,21 +83,20 @@ header img {
     
 }
 
-section.one {
+section {
+    height: auto;
     width: 100%;
-    background: rgba(0,0,0,.13)
 }
 
-section.one .section_content {
-    width: 65%;
-    padding: 5rem .5rem 4rem;
-}
 
 .section_content {
+    height: 100%;
     width: 70%;
-    padding: 0 .5rem;
+    padding: 3rem .5rem;
     margin: 0 auto;
+
 }
+
 
  .row.extra {
     width: 100%;
@@ -123,8 +121,9 @@ section.one .card {
     border:none;
     box-shadow: 0 .5px 1.5px .5px gray;
     min-width: 226.4px;
-    max-width: 22rem;
-    height: fit-content;
+    max-width: 25rem;
+    height: auto;
+
 }
 
 .card-body .btn {
@@ -141,6 +140,7 @@ section.one .card {
 section.two {
     height: auto;
     padding: 6rem 0;
+    background: rgba(0,0,0,.13)
 }
 
 section.two .section_content {
@@ -157,7 +157,6 @@ section.two .media  {
 
 
 section.three {
-    background: rgba(0,0,0,.13);
     height: auto;
     padding: 2rem 0 4.5rem;
 }
@@ -167,7 +166,7 @@ section.three .col-sm, .col-sm-6 {
 }
 
 .carousel-inner img {
-    height: 281px;
+    height: 100%;
 }
 
 .carousel-item .w-100 {
@@ -286,8 +285,14 @@ footer {
   }
 
   @media only screen and(max-width: 795px) {
-    .card-body {
-        margin: 0 auto;
+    
+    section {
+        padding: 2rem 0rem 4rem;
+        margin: 0 0;
+    }
+
+    .section_content {
+        margin: 0;
     }
   }
   
