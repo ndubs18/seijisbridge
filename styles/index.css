@@ -5,7 +5,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 iFrame {
@@ -121,8 +121,8 @@ section.one .card {
     border:none;
     box-shadow: 0 .5px 1.5px .5px gray;
     min-width: 226.4px;
-    max-width: 25rem;
-    height: auto;
+    max-width: 28rem;
+    height: 35rem;
 
 }
 
@@ -134,7 +134,7 @@ section.one .card {
 }
 
 .card-img-top {
-    height: 10rem;
+    height: 14rem;
 }
 
 section.two {
@@ -162,7 +162,8 @@ section.three {
 }
 
 section.three .col-sm, .col-sm-6 {
- margin-top: 1rem
+ margin-top: 1rem;
+ margin-right: 2rem
 }
 
 .carousel-inner img {
