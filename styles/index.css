@@ -8,12 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-hr {
-    height: 1px;
-    background: rgba(0, 0, 0, .1)
-}
-
-video {
+iFrame {
     width:100%;
     min-height:280px;
     max-height:320px;
@@ -37,6 +32,11 @@ video {
     z-index: 1000;
 }
 
+.navbar li {
+    font-size: 1.15rem 
+    
+}
+
 .navbar-collapse.show {
     background: rgba(0,0,0,.5)!important;
 }
@@ -46,13 +46,18 @@ video {
 }
 
 header {
-    height: 80vh;
+    height: 75vh;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)), url("../assets/images/fern.jpg");
-    background-size: 100%;
-    background-repeat: none;
+    background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)), url("../assets/images/Header\ Home\ Page.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
 }
 
+header h1 {
+    font-size: 2rem;
+}
 header .row {
     height: 100%;
     margin: 0;
@@ -66,14 +71,14 @@ header .col-sm {
 }
 
 header img {
-    width: 4rem;
+    width: 6rem;
 }
 .navbar-toggler{
     background: rgba(1, 152, 117, 1) !important;
     border-color: rgba(1, 152, 117, 1)!important;
 }
 .header_img img {
-    width: 20rem;
+    min-width: 30rem;
     height: auto;
     margin: 0 auto;
     
@@ -81,6 +86,7 @@ header img {
 
 section.one {
     width: 100%;
+    background: rgba(0,0,0,.13)
 }
 
 section.one .section_content {
@@ -101,27 +107,16 @@ section.one .section_content {
     width: fit-content
 }
 
-section.one .card.extra {
-    box-shadow: none;
-    text-align: center;
-
-}
 
 section.one .card.extra .card-title {
     margin: 0 0 .5rem !important;
  
 }
 
-.card.extra .card-body {
-    width: 100%;
-
-    
+.card-text {
+    line-height: 30px;
 }
 
-.card.extra .btn {
-    width: 8rem;
-
-}
 
 section.one .card {
     margin: 1rem auto;
@@ -144,7 +139,6 @@ section.one .card {
 
 section.two {
     height: auto;
-    background: rgba(0,0,0,.13);
     padding: 6rem 0;
 }
 
@@ -154,6 +148,7 @@ section.two .section_content {
 
 
 section.three {
+    background: rgba(0,0,0,.13);
     height: auto;
     padding: 2rem 0 4.5rem;
 }
@@ -211,7 +206,7 @@ section.five button {
 }
 
 section.five .section_content {
-    width: 60%
+    width: 65%
 }
 
 section.five h1 {
