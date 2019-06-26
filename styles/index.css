@@ -9,7 +9,8 @@ body {
 }
 
 iFrame {
-    min-width:100%;
+    min-width:300px;
+    width: 100%;
     height: 380px;
 }
 
@@ -36,13 +37,12 @@ nav {
 
 .nav-item {
     color: white!important;
-    font-size: 2vh
 }
 
 header {
     height: 75vh;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url("../assets/images/Header\ Home\ Page.jpeg");
+    background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url("../assets/images/Header\ Home\ Page.jpeg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -86,7 +86,7 @@ section {
 
 .section_content {
     height: 100%;
-    width: 70%;
+    width: 75%;
     padding: 3rem .5rem;
     margin: 0 auto;
 }
@@ -154,9 +154,8 @@ section.three {
     padding: 2rem 0 4.5rem;
 }
 
-section.three .col-sm, .col-sm-6 {
- margin-top: 1rem;
- margin-right: 2rem
+section.three .col-sm{
+    margin-bottom: 1rem;
 }
 
 .carousel-inner img {
@@ -164,9 +163,9 @@ section.three .col-sm, .col-sm-6 {
 }
 
 .carousel-item .w-100 {
-    width: auto;
-    min-height: 200px;
+    min-height: 380px;
     max-height: 380px;
+    min-width: 300px;
 }
 
 .btn-outline-success {
@@ -287,6 +286,16 @@ footer {
 
     .section_content {
         margin: 0;
+        width: 90%!important
+    }
+
+    .row {
+        width: 100%;
+        
+    }
+    .section.three .col-sm, .col-sm-6 {
+        margin-top: 1rem;
+        margin-right: 0!important;
     }
   }
   
